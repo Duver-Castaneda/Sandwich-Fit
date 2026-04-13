@@ -81,6 +81,7 @@ defineProps<{ msg: string }>()
 
 <style scoped>
 .page {
+  width: 100%;
   min-height: 100vh;
   background: linear-gradient(180deg, #0f1a34 0%, #132a55 100%);
   color: #edf4ff;
@@ -316,18 +317,25 @@ defineProps<{ msg: string }>()
     height: auto;
     gap: 12px;
     padding: 18px 16px;
+    width: 100%;
   }
   .logo-text {
     font-size: 20px;
   }
   .Botones {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+    width: 100%;
   }
   .BotonesSupra {
     padding: 10px 12px;
     font-size: 13px;
+    min-width: 120px;
+    flex: 1 1 min(120px, 100%);
   }
   .hero {
+    width: 100%;
     gap: 20px;
     padding: 40px 16px 24px;
   }
@@ -345,14 +353,16 @@ defineProps<{ msg: string }>()
     justify-content: center;
   }
   .hero-visual {
+    width: 100%;
     padding: 0 10px;
   }
   .sandwich-card {
     width: 100%;
-    max-width: 360px;
-    min-height: auto;
+    max-width: 420px;
+    min-height: 420px;
+    height: auto;
     aspect-ratio: auto;
-    padding: 24px;
+    padding: 28px;
   }
   .features,
   .menu-items {
