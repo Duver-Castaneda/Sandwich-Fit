@@ -313,15 +313,53 @@ defineProps<{ msg: string }>()
     gap: 12px;
     padding: 18px 16px;
   }
+  .logo-text {
+    font-size: 20px;
+  }
   .Botones {
     justify-content: center;
+  }
+  .BotonesSupra {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .hero {
+    gap: 20px;
+    padding: 40px 16px 24px;
+  }
+  .hero-copy {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .hero-copy h1 {
+    font-size: 2.4rem;
+  }
+  .hero-copy p {
+    margin: 18px auto;
   }
   .hero-actions {
     justify-content: center;
   }
+  .hero-visual {
+    padding: 0 10px;
+  }
+  .sandwich-card {
+    min-height: 320px;
+    padding: 24px;
+  }
   .features,
   .menu-items {
     grid-template-columns: 1fr;
+  }
+  .feature-card,
+  .menu-item {
+    padding: 20px;
+  }
+  .menu-preview {
+    padding: 24px 16px 40px;
+  }
+  .menu-preview h2 {
+    font-size: 1.6rem;
   }
 }
 </style>
