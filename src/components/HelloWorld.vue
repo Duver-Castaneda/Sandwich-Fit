@@ -212,10 +212,14 @@ defineProps<{ msg: string }>()
 .hero-visual {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .sandwich-card {
   width: min(420px, 100%);
-  min-height: 420px;
+  max-width: 420px;
+  min-height: 320px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   background: linear-gradient(180deg, #1f3b68 0%, #172d55 100%);
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 24px 80px rgba(0,0,0,0.25);
@@ -344,7 +348,10 @@ defineProps<{ msg: string }>()
     padding: 0 10px;
   }
   .sandwich-card {
-    min-height: 320px;
+    width: 100%;
+    max-width: 360px;
+    min-height: auto;
+    aspect-ratio: auto;
     padding: 24px;
   }
   .features,
