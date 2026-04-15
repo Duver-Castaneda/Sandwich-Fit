@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{ msg: string }>()
 import Sandwich from '../assets/Sandwich.jpeg'
-import Comercial from '../assets/comercial.mp4'
+import Comercial from '../assets/Comercial.mp4'
 </script>
 
 <template>
@@ -80,8 +80,7 @@ import Comercial from '../assets/comercial.mp4'
         <p>Mira los beneficios del sándwich saludable.</p>
       </div>
       <div class="video-frame">
-        <video controls muted playsinline>
-          <source :src="Comercial" type="video/mp4" />
+        <video controls muted playsinline :src="Comercial">
           Tu navegador no soporta reproducción de video.
         </video>
       </div>
