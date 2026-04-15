@@ -4,25 +4,18 @@ import Sandwich from '../assets/Sandwich.jpeg'
 </script>
 
 <template>
-<div class="page">
+<div class="pagina">
   <header class="menu">
     <div class="informacion">
       <span class="logo-text">Sandwich Fit</span>
     </div>
-    <nav class="Botones">
-      <button class="BotonesSupra">Inicio</button>
-      <button class="BotonesSupra">Menú</button>
-      <button class="BotonesSupra">Ofertas</button>
-      <button class="BotonesSupra">Ubicaciones</button>
-      <button class="BotonesSupra">Contacto</button>
-    </nav>
   </header>
 
   <main class="hero">
     <section class="hero-copy">
       <span class="eyebrow">Edición especial</span>
       <h1>El sándwich saludable que todos recuerdan</h1>
-      <p>Pan dorado, relleno cremoso de nueces y yogurt griego, hojas verdes frescas y un toque cítrico para una experiencia premium.</p>
+      <p>Pan integral, relleno de pollo desmechado y una salsa casera, todo saludable</p>
       <div class="hero-actions">
         <button class="primary-btn">Descubre el sabor</button>
       </div>
@@ -37,44 +30,44 @@ import Sandwich from '../assets/Sandwich.jpeg'
       <div class="sandwich-card">
         <img :src="Sandwich" alt="Sandwich Fit" class="hero-image" />
         <div class="price-badge">Sabor único</div>
-        <div class="sandwich-tag">CreamNuez</div>
+        <div class="sandwich-tag">Sandwich Fit</div>
       </div>
     </section>
   </main>
 
-  <section class="features">
-    <article class="feature-card">
-      <h3>Inspirado en nueces</h3>
-      <p>El ingrediente estrella que le da una cremosidad y un aroma inolvidable.</p>
+  <section class="destacados">
+    <article class="tarjeta-destacado">
+      <h3>Pan integral</h3>
+      <p>Pan integral dorado, con textura suave y más fibra para un bocado saludable.</p>
     </article>
-    <article class="feature-card">
-      <h3>Pan artesanal</h3>
-      <p>Con corteza dorada y miga suave, hecho para mantener cada mordida perfecta.</p>
+    <article class="tarjeta-destacado">
+      <h3>Pollo desmechado</h3>
+      <p>Pollo tierno y sazonado, desmenuzado para una experiencia jugosa y nutritiva.</p>
     </article>
-    <article class="feature-card">
-      <h3>Frescura natural</h3>
-      <p>Vegetales seleccionados y salsa casera con un toque de limón.</p>
+    <article class="tarjeta-destacado">
+      <h3>Salsa casera</h3>
+      <p>Salsa casera ligera y cremosa que une todos los sabores del sándwich.</p>
     </article>
-    <article class="feature-card">
-      <h3>Solo para disfrutar</h3>
-      <p>Una pieza diseñada para quien busca un bocado diferente y memorable.</p>
+    <article class="tarjeta-destacado">
+      <h3>Saludable y sabroso</h3>
+      <p>El combo perfecto de ingredientes para un sándwich delicioso y natural.</p>
     </article>
   </section>
 
   <section class="menu-preview">
-    <h2>¿Qué hace único a CreamNuez?</h2>
+    <h2>¿Qué hace único a Sandwich Fit?</h2>
     <div class="menu-items">
       <div class="menu-item">
-        <h4>Textura cremosa</h4>
-        <p>La mezcla de yogurt y nueces crea un relleno suave y sabroso.</p>
+        <h4>Ingredientes frescos</h4>
+        <p>Verduras de primera calidad y pollo jugoso para cada bocado saludable.</p>
       </div>
       <div class="menu-item">
-        <h4>Toque fresco</h4>
-        <p>Hojas verdes y tomate para equilibrar cada bocado.</p>
+        <h4>Comida ligera</h4>
+        <p>Una opción balanceada que se siente ligera sin sacrificar sabor.</p>
       </div>
       <div class="menu-item">
-        <h4>Estilo premium</h4>
-        <p>Una presentación hermosa y un sabor pensado para impresionar.</p>
+        <h4>Sabor casero</h4>
+        <p>Todo preparado con recetas sencillas y un toque de cocina familiar.</p>
       </div>
     </div>
   </section>
@@ -82,7 +75,7 @@ import Sandwich from '../assets/Sandwich.jpeg'
 </template>
 
 <style scoped>
-.page {
+.pagina {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(180deg, #0f1a34 0%, #132a55 100%);
@@ -105,6 +98,8 @@ import Sandwich from '../assets/Sandwich.jpeg'
 .informacion {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .logo-text {
   color: #7cc6ff;
@@ -114,25 +109,6 @@ import Sandwich from '../assets/Sandwich.jpeg'
   text-transform: uppercase;
   text-shadow: 0 2px 12px rgba(124, 198, 255, 0.5);
   padding-left: 10px;
-}
-.Botones {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.BotonesSupra {
-  background-color: transparent;
-  will-change: transform;
-  transition: transform 300ms ease-in-out, color 200ms ease-in-out;
-  border: none;
-  cursor: pointer;
-  color: #c6e7ff;
-  font-size: 14px;
-  padding: 8px 12px;
-}
-.BotonesSupra:hover {
-  transform: translateY(-2px);
-  color: #ffffff;
 }
 .hero {
   display: grid;
@@ -256,23 +232,23 @@ import Sandwich from '../assets/Sandwich.jpeg'
   font-weight: 700;
   color: #e6f5ff;
 }
-.features {
+.destacados {
   display: grid;
   grid-template-columns: repeat(4, minmax(180px, 1fr));
   gap: 18px;
   padding: 0 24px 32px;
 }
-.feature-card {
+.tarjeta-destacado {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.08);
   padding: 26px;
   border-radius: 24px;
 }
-.feature-card h3 {
+.tarjeta-destacado h3 {
   margin: 0 0 14px;
   font-size: 1.1rem;
 }
-.feature-card p {
+.tarjeta-destacado p {
   margin: 0;
   color: #c9ddf5;
   line-height: 1.7;
@@ -374,11 +350,11 @@ import Sandwich from '../assets/Sandwich.jpeg'
     aspect-ratio: auto;
     padding: 28px;
   }
-  .features,
+  .destacados,
   .menu-items {
     grid-template-columns: 1fr;
   }
-  .feature-card,
+  .tarjeta-destacado,
   .menu-item {
     padding: 20px;
   }
