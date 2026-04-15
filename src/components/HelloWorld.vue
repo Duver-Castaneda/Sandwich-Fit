@@ -1,12 +1,13 @@
 <script setup lang="ts">
 defineProps<{ msg: string }>()
+import Sandwich from '../assets/Sandwich.jpeg'
 </script>
 
 <template>
 <div class="page">
   <header class="menu">
     <div class="informacion">
-      <span class="logo-text">CreamNuez</span>
+      <span class="logo-text">Sandwich Fit</span>
     </div>
     <nav class="Botones">
       <button class="BotonesSupra">Inicio</button>
@@ -34,6 +35,7 @@ defineProps<{ msg: string }>()
 
     <section class="hero-visual">
       <div class="sandwich-card">
+        <img :src="Sandwich" alt="Sandwich Fit" class="hero-image" />
         <div class="price-badge">Sabor único</div>
         <div class="sandwich-tag">CreamNuez</div>
       </div>
@@ -220,13 +222,21 @@ defineProps<{ msg: string }>()
   max-width: 420px;
   min-height: 320px;
   height: auto;
-  aspect-ratio: 4 / 5;
   background: linear-gradient(180deg, #1f3b68 0%, #172d55 100%);
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 24px 80px rgba(0,0,0,0.25);
   border-radius: 32px;
   position: relative;
-  padding: 32px;
+  padding: 18px;
+  overflow: hidden;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
 }
 .price-badge {
   position: absolute;
