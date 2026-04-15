@@ -81,7 +81,7 @@ import Comercial from '../assets/comercial.mp4'
       </div>
       <div class="video-frame">
         <video controls muted playsinline>
-          <source src="/comercial.mp4" type="video/mp4" />
+          <source :src="Comercial" type="video/mp4" />
           Tu navegador no soporta reproducción de video.
         </video>
       </div>
