@@ -29,7 +29,7 @@ import Sandwich from '../assets/Sandwich.jpeg'
     <section class="hero-visual">
       <div class="sandwich-card">
         <img :src="Sandwich" alt="Sandwich Fit" class="hero-image" />
-        <div class="price-badge">Sabor único</div>
+        <div class="SaborUnico">Sabor único</div>
         <div class="sandwich-tag">Sandwich Fit</div>
       </div>
     </section>
@@ -59,7 +59,7 @@ import Sandwich from '../assets/Sandwich.jpeg'
     <div class="menu-items">
       <div class="menu-item">
         <h4>Ingredientes frescos</h4>
-        <p>Verduras de primera calidad y pollo jugoso para cada bocado saludable.</p>
+        <p>Ingredientes de primera calidad y pollo jugoso para cada bocado saludable.</p>
       </div>
       <div class="menu-item">
         <h4>Comida ligera</h4>
@@ -214,7 +214,7 @@ import Sandwich from '../assets/Sandwich.jpeg'
   object-fit: cover;
   aspect-ratio: 4 / 5;
 }
-.price-badge {
+.SaborUnico {
   position: absolute;
   top: 24px;
   right: 24px;
