@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{ msg: string }>()
 import Sandwich from '../assets/Sandwich.jpeg'
+import Comercial from '../assets/comercial.mp4'
 </script>
 
 <template>
@@ -68,6 +69,21 @@ import Sandwich from '../assets/Sandwich.jpeg'
       <div class="menu-item">
         <h4>Sabor casero</h4>
         <p>Todo preparado con recetas sencillas y un toque de cocina familiar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-card">
+      <div class="video-header">
+        <h2>Comercial</h2>
+        <p>Mira los beneficios del sándwich saludable.</p>
+      </div>
+      <div class="video-frame">
+        <video controls muted playsinline>
+          <source src="/comercial.mp4" type="video/mp4" />
+          Tu navegador no soporta reproducción de video.
+        </video>
       </div>
     </div>
   </section>
@@ -279,6 +295,45 @@ import Sandwich from '../assets/Sandwich.jpeg'
 .menu-item p {
   margin: 0;
   color: #c9ddf5;
+}
+.video-section {
+  padding: 0 24px 56px;
+}
+.video-card {
+  max-width: 980px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+}
+.video-header {
+  margin-bottom: 20px;
+}
+.video-header h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+}
+.video-header p {
+  margin: 0;
+  color: #c9ddf5;
+  line-height: 1.7;
+}
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #000;
+}
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media (max-width: 920px) {
   .hero {
