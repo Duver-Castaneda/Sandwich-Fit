@@ -296,16 +296,17 @@ import Comercial from '../assets/Comercial.mp4'
   color: #c9ddf5;
 }
 .video-section {
-  padding: 0 24px 56px;
+  padding: 40px 24px 64px;
+  background: linear-gradient(180deg, #081223 0%, transparent 100%);
 }
 .video-card {
   max-width: 980px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(15, 26, 52, 0.95);
+  border: 1px solid rgba(91, 185, 255, 0.25);
   border-radius: 28px;
   padding: 28px;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+  box-shadow: 0 28px 100px rgba(0,0,0,0.25);
 }
 .video-header {
   margin-bottom: 20px;
@@ -327,12 +328,14 @@ import Comercial from '../assets/Comercial.mp4'
   overflow: hidden;
   border-radius: 20px;
   background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .video-frame video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: #000;
 }
 @media (max-width: 920px) {
   .hero {
