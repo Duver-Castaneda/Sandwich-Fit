@@ -222,11 +222,13 @@ import Comercial from '../assets/Comercial.mp4'
   overflow: hidden;
 }
 .hero-image {
-  width: 100%;
+  width: min(85%, 360px);
+  max-width: 360px;
   height: auto;
   display: block;
+  margin: 0 auto;
   border-radius: 24px;
-  object-fit: cover;
+  object-fit: contain;
   aspect-ratio: 4 / 5;
 }
 .SaborUnico {
