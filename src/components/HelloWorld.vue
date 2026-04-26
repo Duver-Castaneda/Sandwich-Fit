@@ -8,7 +8,7 @@ import Comercial from '../assets/Comercial.mp4'
 <div class="pagina">
   <header class="menu">
     <div class="informacion">
-      <span class="logo-text">Sandwich Fit</span>
+      <span class="logo-text">FreshBite</span>
     </div>
   </header>
 
