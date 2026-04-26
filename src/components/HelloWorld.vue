@@ -29,9 +29,9 @@ import Comercial from '../assets/Comercial.mp4'
 
     <section class="hero-visual">
       <div class="sandwich-card">
-        <img :src="Sandwich" alt="Sandwich Fit" class="hero-image" />
+        <img :src="Sandwich" alt="FreshBite" class="hero-image" />
         <div class="SaborUnico">Sabor único</div>
-        <div class="sandwich-tag">Sandwich Fit</div>
+        <div class="sandwich-tag">FreshBite</div>
       </div>
     </section>
   </main>
